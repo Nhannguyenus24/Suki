@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+.navbar-left .logo {
+    width: 50px;
+    max-height: 50px;
+    display: block;
+    top: 0;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-right ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar-right ul li a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.navbar-right ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s, transform 0.2s;
+    transform-origin: center;
+}
+
+.navbar-right ul li a:hover::after {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1);
+}
+
+ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+.navbar-right .profile_img img{
+    display: block;
+    align-items: center;
+}
+.profile_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.navbar-center .search-box {
+    width: 400px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: rgb(214, 199, 199);
+
+}
+.navbar-center .search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+.navbar-center .search-box img{
+    width: 14px;
+}

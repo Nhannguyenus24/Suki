@@ -1,0 +1,209 @@
+:root{
+    margin:0;
+    --barWidth:350px;
+    --barHeight:30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244,100,100);
+    background: linear-gradient(135deg, #ff13e7,#6d00c3,#2fffff);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*Make the image fitting the screen*/
+    /* background-image: url("https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149152831.jpg") ; */ 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    /* background:linear-gradient(135deg, #cddada 20%,#e7fce7 40%,#f4faf4 80%); */
+    width: 400px;
+    height:600px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0.75rem 3rem hsla(0, 0%, 9%, 0.7);
+
+}
+.header{
+    --headMargin : 180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.part-1, .part-2, .part-3{
+    width: 120px;
+    color: black;
+}
+.part-3 div{
+    background-color: none;
+    width:50px;
+    height:10px;
+    margin: 10px 10px;
+}
+.camera-button{
+
+    --radius: 30px;
+    --margin: 10px;
+    height: var(--radius);
+    width:  var(--radius);
+    background-color: black;
+    border-radius: 50%;
+    margin-left: var(--margin);
+    margin-top:  var(--margin);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-button > *{
+    border-radius: 50%;
+}
+.inner-circle{
+    background-color: rgb(255, 255, 255);
+    --radius: 15px;
+    height: var(--radius);
+    width:  var(--radius);
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle > *{
+    border-radius: 50%;
+    height: var(--radius);
+    width:  var(--radius);
+    
+}
+
+.dot-circle{
+    background-color: black;
+    --radius:5px;
+}
+
+.rectangle-scroll{
+    width: 100%;
+    height:10px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+
+}
+
+.empty-space{
+    width: 100px;
+    height:10px;
+    background-color: none;
+}
+
+ 
+
+.body h2{
+    text-align: center;
+    color:black;
+    font-size:30px;
+}
+.user-password-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.user-password-field .username, .password{
+    border-radius: 20px;
+    margin: 10px 0;
+    outline: 0;
+    border: none;
+    padding-left:10px;
+
+    background-color: transparent;
+    border:1px solid black;
+    color:black;
+}
+
+::placeholder{
+    color:grey;
+}
+.username{
+    width:var(--barWidth);
+    height:var(--barHeight);
+}
+.password{
+    width:var(--barWidth);
+    height:var(--barHeight);
+}
+
+.check-box{
+    color:black;
+}
+
+.remember-forgot-field{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px; 
+    line-height: 25px;
+}
+.remember-forgot-field *{
+    color:black;
+}
+
+.login-register-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.login{
+    width:var(--barWidth);
+    height:calc(var(--barHeight) + 10px);
+    border-radius: 20px;
+    text-align: center;    
+    padding:10px 0;
+    outline: 0;
+    border:none;
+    transition:  0.6s;
+}
+.login:hover{
+    color:black;
+    background-color: white;
+    border:none;
+}
+.login-register-field div{
+    color:black;
+
+}
+.register{
+    margin-left:10px;
+}
+
+input[type ="checkbox"]{
+    accent-color: pink;
+}
+
+
+/*Image*/
+.img-container{
+    --imgWidth: 50%;
+    width: var(--imgWidth);
+    height: var(--imgWidth);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.img-container img{
+    width: var(--imgWidth);
+    background-size: cover;
+    object-fit: contain;
+}

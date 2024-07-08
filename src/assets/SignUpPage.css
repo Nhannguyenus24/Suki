@@ -1,0 +1,224 @@
+
+.sign-up-form{
+    /* background:linear-gradient(135deg, #cddada 20%,#e7fce7 40%,#f4faf4 80%); */
+    width: 400px;
+    height:600px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0.75rem 3rem hsla(0, 0%, 9%, 0.7);
+
+}
+.header{
+    --headMargin : 180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.part-1, .part-2, .part-3{
+    width: 120px;
+    color: black;
+}
+.part-3 div{
+    background-color: none;
+    width:50px;
+    height:10px;
+    margin: 10px 10px;
+}
+.camera-button{
+
+    --radius: 30px;
+    --margin: 10px;
+    height: var(--radius);
+    width:  var(--radius);
+    background-color: black;
+    border-radius: 50%;
+    margin-left: var(--margin);
+    margin-top:  var(--margin);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-button > *{
+    border-radius: 50%;
+}
+.inner-circle{
+    background-color: rgb(255, 255, 255);
+    --radius: 15px;
+    height: var(--radius);
+    width:  var(--radius);
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle > *{
+    border-radius: 50%;
+    height: var(--radius);
+    width:  var(--radius);
+    
+}
+
+.dot-circle{
+    background-color: black;
+    --radius:5px;
+}
+
+.rectangle-scroll{
+    width: 100%;
+    height:10px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+
+}
+
+.empty-space{
+    width: 100px;
+    height:10px;
+    background-color: none;
+}
+
+.body div{
+    width: 100%;
+}
+.user-password-field div{
+    display: flex;
+    flex-direction:  row;
+    justify-items: center;
+    align-items: center;
+    width:90%;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.user-password-field div button{
+   
+    margin-left:auto;
+    background-color: white;
+    border:0;
+    outline: 0;
+    border-radius: 20px;
+    vertical-align: center;
+}
+.user-password-field div button:hover{
+    background-color: rgb(230, 224, 224);
+
+}
+.user-password-field .password{
+    width: 50%;
+    border:0;
+    outline:0;
+}
+.body h2{
+    text-align: center;
+    color:black;
+    font-size:30px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-password-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+}
+.user-password-field input{
+    border-radius: 20px;
+    outline: 0;
+    border: 1px solid grey;
+    padding-left:10px;
+    background-color: white;
+    color:black;
+    padding: 10px 10px;
+    width:85%;
+}
+
+::placeholder{
+    color:grey;
+}
+
+
+.check-box{
+    color:black;
+}
+
+.remember-forgot-field{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    line-height: 25px;
+}
+.remember-forgot-field *{
+    color:black;
+}   
+
+.sign-up-register-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+.sign-up-register-field div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+.sign-up{
+    /* width:var(--barWidth);
+    height:calc(var(--barHeight) + 10px); */
+    padding:10px 10px;
+    width: 90%;
+    height:calc(var(--barHeight) + 10px);
+    border-radius: 20px;
+    text-align: center;    
+    padding:10px 0;
+    outline: 0;
+    border:none;
+    transition:  0.6s;
+}
+.sign-up:hover{
+    color:black;
+    background-color: white;
+    border: 1px solid grey;
+}
+.sign-up-register-field div{
+    color:black;
+
+}
+.register{
+    margin-left:10px;
+}
+
+input[type ="checkbox"]{
+    accent-color: pink;
+}
+
+
+/*Image*/
+.img-container{
+    --imgWidth: 100px;
+    width: var(--imgWidth);
+    height: var(--imgWidth);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.img-container img{
+    width: var(--imgWidth);
+    background-size: cover;
+    object-fit: contain;
+}
